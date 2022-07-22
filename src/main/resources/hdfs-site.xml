@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+    <property>
+        <name>dfs.namenode.rpc-address</name>
+        <value>ip-172-31-129-158.ap-southeast-1.compute.internal:8020</value>
+    </property>
+
+    <property>
+        <name>dfs.namenode.http-address</name>
+        <value>ip-172-31-129-158.ap-southeast-1.compute.internal:9870</value>
+    </property>
+
+    <property>
+        <name>dfs.namenode.https-address</name>
+        <value>ip-172-31-129-158.ap-southeast-1.compute.internal:9871</value>
+    </property>
+</configuration>
