@@ -21,8 +21,10 @@
 
 # KDA Params Group: FlinkTableAppProperties
 ```
-
-
+![](https://pcmyp.oss-accelerate.aliyuncs.com/markdown/20220722205917.png)
+![](https://pcmyp.oss-accelerate.aliyuncs.com/markdown/20220722210237.png)
+![](https://pcmyp.oss-accelerate.aliyuncs.com/markdown/20220722210104.png)
+![](https://pcmyp.oss-accelerate.aliyuncs.com/markdown/20220722210357.png)
 ### Streaming2S3 
 #### KDA消费KDS(kinesis data streams)数据写入S3
 1. 主函数Streaming2S3
