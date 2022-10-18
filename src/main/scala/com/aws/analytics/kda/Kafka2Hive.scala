@@ -15,8 +15,8 @@ import org.apache.hadoop.hive.conf.HiveConf
 import org.slf4j.{Logger, LoggerFactory}
 
 object Kafka2Hive {
-  val LOG: Logger = LoggerFactory.getLogger(Kafka2Hive.getClass)
 
+  val LOG: Logger = LoggerFactory.getLogger(Kafka2Hive.getClass)
   def main(args: Array[String]): Unit = {
 
     LOG.info("start run flink kafka2hive ....")

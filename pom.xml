@@ -209,6 +209,7 @@
     </dependencies>
 
     <build>
+        <finalName>${project.artifactId}-${project.version}-${build.time}</finalName>
         <plugins>
             <!-- We use the maven-shade plugin to create a fat jar that contains all necessary dependencies. -->
             <!-- Change the value of <mainClass>...</mainClass> if your program entry point changes. -->
@@ -345,6 +346,18 @@
                             <sources>
                                 <source>src/test/scala</source>
                             </sources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>timestamp-property</id>
+                        <goals>
+                            <goal>timestamp-property</goal>
+                        </goals>
+                        <configuration>
+                            <name>build.time</name>
+                            <pattern>yyyyMMddHHmm</pattern>
+                            <locale>zh_CN</locale>
+                            <timeZone>GMT+8</timeZone>
                         </configuration>
                     </execution>
                 </executions>

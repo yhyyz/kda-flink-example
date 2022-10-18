@@ -9,16 +9,17 @@ import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment
 import org.apache.flink.table.api.EnvironmentSettings
 import org.apache.flink.table.api.bridge.scala.StreamTableEnvironment
 import org.apache.flink.table.catalog.GenericInMemoryCatalog
+import org.slf4j.{Logger, LoggerFactory}
 
 
 object Kafka2S3 {
 
-//  val LOG: Logger = LoggerFactory.getLogger(Kafka2S3.getClass)
+  val LOG: Logger = LoggerFactory.getLogger(Kafka2S3.getClass)
   def main(args: Array[String]): Unit = {
 
 //    LOG.info(args.mkString(" ,"))
 //    // 解析命令行参数
-//    LOG.info("start run kda flink table api  kafka data to s3 ....")
+    LOG.info("Kafka2S3: start run kda flink table api  kafka data to s3 ....")
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     // 注意在Kinesis Analysis 运行时中该参数不生效，需要在CLI中设置相关参数，同时KDA 默认会使用RocksDB存储状态，不用设置
     env.enableCheckpointing(10000)
